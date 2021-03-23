@@ -1,8 +1,6 @@
 <template>
-  <div id="app">
     <NavBar />
     <router-view/>
-  </div>
 </template>
 
 <script>
@@ -17,11 +15,14 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+html {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-weight: normal;
+  color: rgba(0,0,0,0.87);
+
+  body {
+    background-color: $background-color;
+    margin: 0;
+  }
 }
 </style>
