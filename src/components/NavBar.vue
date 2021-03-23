@@ -6,14 +6,7 @@
       <router-link to="/projects">Projects</router-link>
       <router-link to="/resume">Resume</router-link>
     </div>
-    <ul class="nav-mobile">
-      <li><a href="/experience">Experience</a></li>
-      <li><a href="/projects">Projects</a></li>
-      <li><a href="/resume">Resume</a></li>
-    </ul>
-    <a href="#" data-target="nav-mobile" class="sidenav-trigger">
-      <i class="material-icons">menu</i>
-    </a>
+    <button class="hamburger-menu"></button>
   </nav>
 </template>
 
@@ -55,8 +48,14 @@ nav {
       position: absolute;
       padding: 0;
       height: 56px;
+      left: 50%;
+      transform: translateX(-50%);
       @include sm {
         height: 64px;
+      }
+      @include lg {
+        left: auto;
+        transform: none;
       }
       img {
         padding: 0 20px;
@@ -64,6 +63,25 @@ nav {
         @include sm {
           width: 64px;
         }
+      }
+    }
+
+    .hamburger-menu {
+      background-color: transparent;
+      color: inherit;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      outline: inherit;
+      float: left;
+      top: 0;
+      background-image: url(../assets/menu.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100%;;
+      width: 64px;
+      @include lg {
+        display: none;
       }
     }
 }
