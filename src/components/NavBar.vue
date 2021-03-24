@@ -6,9 +6,9 @@
       <router-link to="/projects">Projects</router-link>
       <router-link to="/resume">Resume</router-link>
     </div>
-    <button type="button" class="hamburger-menu" @click="toggleNavMobile"></button>
+    <button type="button" class="hamburger-menu" @click="showNavMobile"></button>
   </nav>
-  <NavMobile v-if="showNavMobile" @exit="toggleNavMobile" />
+  <NavMobile ref="navMobile" />
 </template>
 
 <script>
@@ -19,14 +19,9 @@ export default {
   components: {
     NavMobile
   },
-  data() {
-    return {
-      showNavMobile: false
-    }
-  },
   methods: {
-    toggleNavMobile() {
-      this.showNavMobile = !this.showNavMobile;
+    showNavMobile() {
+      this.$refs.navMobile.show = true;
     }
   }
 };

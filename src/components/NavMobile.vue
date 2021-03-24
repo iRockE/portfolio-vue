@@ -1,16 +1,25 @@
 <template>
-  <div class="nav-mobile" @click="$emit('exit')"></div>
-  <nav>
-    <router-link to="/experience" @click="$emit('exit')">Experience</router-link>
-    <router-link to="/projects" @click="$emit('exit')">Projects</router-link>
-    <router-link to="/resume" @click="$emit('exit')">Resume</router-link>
-  </nav>
+  <transition name="fade">
+    <div v-if="show" class="nav-mobile" @click="show = false"></div>
+  </transition>
+  <transition name="slide">
+    <nav v-if="show">
+      <router-link to="/experience" @click="show = false">Experience</router-link>
+      <router-link to="/projects" @click="show = false">Projects</router-link>
+      <router-link to="/resume" @click="show = false">Resume</router-link>
+    </nav>
+  </transition>
 </template>
 
 <script>
 export default {
   name: "NavMobile",
-  emits: ['exit']
+  emits: ['exit'],
+  data() {
+    return {
+      show: false
+    }
+  }
 };
 </script>
 
@@ -23,6 +32,24 @@ export default {
   right: 0;
   height: 120vh;
   background-color: rgba(0,0,0,0.5);
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.3s ease;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  transform: translateX(-105%);
 }
 nav {
   position: fixed;
