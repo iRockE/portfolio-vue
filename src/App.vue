@@ -24,9 +24,6 @@ html {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   font-weight: normal;
   font-size: 14px;
-  @include lg {
-    font-size: 15px;
-  }
   @include xl {
     font-size: 16px;
   }
@@ -39,6 +36,17 @@ html {
       margin: 0 auto;
       max-width: 992px;
       padding: 0 20px;
+      box-sizing: border-box;
+
+      h1 {
+        text-align: center;
+        margin: 1rem 0 5rem;
+        font-weight: 100;
+        font-size: 4.6rem;
+        @include sm {
+          font-size: 6rem;
+        }
+      }
     }
   }
 }
