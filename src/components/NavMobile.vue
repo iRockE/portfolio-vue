@@ -1,23 +1,15 @@
 <template>
-  <div class="nav-mobile" @click="$emit('exit')">
-    <nav>
-      <router-link to="/experience">Experience</router-link>
-      <router-link to="/projects">Projects</router-link>
-      <router-link to="/resume">Resume</router-link>
-    </nav>
-  </div>
+  <div class="nav-mobile" @click="$emit('exit')"></div>
+  <nav>
+    <router-link to="/experience" @click="$emit('exit')">Experience</router-link>
+    <router-link to="/projects" @click="$emit('exit')">Projects</router-link>
+    <router-link to="/resume" @click="$emit('exit')">Resume</router-link>
+  </nav>
 </template>
 
 <script>
 export default {
   name: "NavMobile",
-  props: {
-    show: {
-      type: Boolean,
-      default: false,
-      required: true
-    }
-  },
   emits: ['exit']
 };
 </script>
@@ -31,6 +23,28 @@ export default {
   right: 0;
   height: 120vh;
   background-color: rgba(0,0,0,0.5);
-  z-index: 100;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 120vh;
+  background-color: #fff;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 32px;
+    transition: background-color .3s;
+    &:hover {
+      background-color: rgba(0,0,0,0.1);
+    }
+  }
 }
 </style>
