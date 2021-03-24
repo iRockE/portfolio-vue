@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <div v-if="show" class="nav-mobile" @click="show = false"></div>
+    <div v-if="show" class="nav-mobile-overlay" @click="show = false"></div>
   </transition>
   <transition name="slide">
     <nav v-if="show">
@@ -29,7 +29,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-.nav-mobile {
+.nav-mobile-overly {
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -38,6 +39,7 @@ export default {
   background-color: rgba(0,0,0,0.5);
 }
 nav {
+  z-index: 101;
   position: fixed;
   top: 0;
   left: 0;

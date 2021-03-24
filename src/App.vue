@@ -1,6 +1,10 @@
 <template>
     <NavBar />
-    <router-view class="page-content" />
+    <router-view v-slot="{ Component }" class="page-content">
+      <transition name="router-fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
 </template>
 
 <script>
@@ -38,4 +42,17 @@ html {
     }
   }
 }
+
+/*#region Transitions*/
+.router-fade-enter-active {
+  transition: opacity .3s;
+}
+.router-fade-leave-active {
+  transition: opacity .1s;
+}
+.router-fade-enter-from,
+.router-fade-leave-to {
+  opacity: 0;
+}
+/*#endregion*/
 </style>
