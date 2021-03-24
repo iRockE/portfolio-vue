@@ -14,10 +14,14 @@
 <script>
 export default {
   name: "NavMobile",
-  emits: ['exit'],
   data() {
     return {
       show: false
+    }
+  },
+  watch: {
+    show(newShow) {
+      document.body.style.overflow = newShow ? "hidden" : null;
     }
   }
 };
@@ -37,7 +41,6 @@ export default {
 .fade-leave-active {
   transition: opacity 0.3s ease;
 }
-
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
@@ -46,7 +49,6 @@ export default {
 .slide-leave-active {
   transition: transform 0.3s ease;
 }
-
 .slide-enter-from,
 .slide-leave-to {
   transform: translateX(-105%);
