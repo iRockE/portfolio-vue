@@ -29,7 +29,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-.nav-mobile-overly {
+.nav-mobile-overlay {
   z-index: 100;
   position: fixed;
   top: 0;
