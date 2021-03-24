@@ -1,6 +1,6 @@
 <template>
     <NavBar />
-    <router-view/>
+    <router-view class="page-content" />
 </template>
 
 <script>
@@ -30,6 +30,12 @@ html {
   body {
     background-color: $background-color;
     margin: 0;
+
+    .page-content {
+      margin: 0 auto;
+      max-width: 992px;
+      padding: 0 20px;
+    }
   }
 }
 </style>
