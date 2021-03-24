@@ -1,12 +1,14 @@
 <template>
   <nav>
-    <router-link to="/" class="brand-logo"><img src="@/assets/logo.png" alt="" ></router-link>
+    <router-link to="/" class="brand-logo"><img src="@/assets/logo.png" alt=""></router-link>
     <div class="nav-tabs">
       <router-link to="/experience">Experience</router-link>
       <router-link to="/projects">Projects</router-link>
       <router-link to="/resume">Resume</router-link>
     </div>
-    <button type="button" class="hamburger-menu" @click="showNavMobile"></button>
+    <button type="button" class="hamburger-menu" @click="showNavMobile">
+      <img src="@/assets/menu.svg" alt="">
+    </button>
   </nav>
   <NavMobile ref="navMobile" />
 </template>
@@ -81,6 +83,7 @@ nav {
     }
   }
   .hamburger-menu {
+    position: relative;
     background-color: transparent;
     color: inherit;
     border: none;
@@ -89,13 +92,20 @@ nav {
     outline: inherit;
     float: left;
     top: 0;
-    background-image: url(../assets/menu.svg);
-    background-repeat: no-repeat;
-    background-position: center;
     height: 100%;;
     width: 64px;
     @include lg {
       display: none;
+    }
+    img {
+      position: absolute;
+      height: 32px;
+      width: 32px;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
     }
   }
 }
