@@ -6,9 +6,31 @@
       <router-link to="/projects">Projects</router-link>
       <router-link to="/resume">Resume</router-link>
     </div>
-    <button class="hamburger-menu"></button>
+    <button type="button" class="hamburger-menu" @click="toggleNavMobile"></button>
   </nav>
+  <NavMobile v-if="showNavMobile" @exit="toggleNavMobile" />
 </template>
+
+<script>
+import NavMobile from "@/components/NavMobile";
+
+export default {
+  name: "NavBar",
+  components: {
+    NavMobile
+  },
+  data() {
+    return {
+      showNavMobile: false
+    }
+  },
+  methods: {
+    toggleNavMobile() {
+      this.showNavMobile = !this.showNavMobile;
+    }
+  }
+};
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
@@ -23,7 +45,6 @@ nav {
     height: 64px;
     line-height: 64px;
   }
-
   .nav-tabs {
     float: right;
     a {
@@ -43,7 +64,6 @@ nav {
       }
     }
   }
-
   .brand-logo {
     position: absolute;
     padding: 0;
@@ -65,7 +85,6 @@ nav {
       }
     }
   }
-
   .hamburger-menu {
     background-color: transparent;
     color: inherit;
