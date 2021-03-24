@@ -37,22 +37,6 @@ export default {
   height: 120vh;
   background-color: rgba(0,0,0,0.5);
 }
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s ease;
-}
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-.slide-enter-active,
-.slide-leave-active {
-  transition: transform 0.3s ease;
-}
-.slide-enter-from,
-.slide-leave-to {
-  transform: translateX(-105%);
-}
 nav {
   position: fixed;
   top: 0;
@@ -76,4 +60,23 @@ nav {
     }
   }
 }
+
+/*#region Transitions*/
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.3s ease;
+}
+.slide-enter-from,
+.slide-leave-to {
+  transform: translateX(-105%);
+}
+/*#endregion*/
 </style>
