@@ -2,7 +2,7 @@
   <section>
     <NavBreadcrumb :trail="['Home', 'Resume']" />
     <h1>Resume</h1>
-    <a class="waves-effect waves-light btn viewPDF" target="_blank" href="/Joshua_Richards_Resume.pdf">View PDF</a>
+    <a target="_blank" href="@/assets/Joshua_Richards_Resume.pdf">View PDF</a>
     <section class="body-section">
       <h2>Summary</h2>
       <p>Software Engineer with development experience ranging from web APIs to embedded systems, driven to work 
@@ -10,8 +10,8 @@
     </section>
     <section class="body-section">
       <h2>Skills</h2>
-      <h5>Programming Languages</h5>
-      <p>C#, JavaScript, C++, HTML, CSS, Python, Java, SQL</p>
+      <h5>Technologies</h5>
+      <p>JavaScript/TypeScript, ES6, Node.js, CSS, HTML, C#, C++, Git</p>
       <h5>Other</h5>
       <ul>
         <li>Ability to handle numerous responsibilities and desire to learn required skills</li>
@@ -25,8 +25,12 @@
         <h3>Carrier Global Corporation</h3>
         <h4>Pittsford, NY <span class="right">Dec 15, 2018 – Present</span></h4>
         <h5>Software Engineer</h5>
-        <p>Responsible for the development of a web-based security-driven video streaming interface (with technologies including ES6, TypeScript, Node.js, RxJS, React).</p>
-        <p>Technical lead of the project from January, 2020 to August, 2020.</p>
+        <p>Responsible for the development of a web-based video streaming interface for security
+          applications (with technologies including ES6, TypeScript, Node.js, RxJS, WebSockets).</p>
+        <p>- Technical lead of the project from January, 2020 to August, 2020. </p>
+        <p>Responsible for some development on one of the applications that uses the streaming
+          interface mentioned above (with technologies including Node.js, React, Redux).</p>
+        <p>Utilizing services such as Rally, GitHub, Jenkins (CI/CD), and Azure.</p>
       </div>
       <div class="resumeExperience">
         <h3>UTC Fire & Security Americas Corp</h3>
