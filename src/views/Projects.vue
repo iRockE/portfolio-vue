@@ -13,12 +13,12 @@
     <section class="body-section">
       <h2>Serpentine</h2>
       <h4>Unity, C#</h4>
-      <LinkButton link="https://play.google.com/store/apps/details?id=com.RockEStudios.Serpentine1">View Project</LinkButton>
+      <LinkButton href="https://play.google.com/store/apps/details?id=com.RockEStudios.Serpentine1">View Project</LinkButton>
     </section>
     <section class="body-section">
       <h2>qApp</h2>
       <h4>Node.js</h4>
-      <LinkButton link="https://qapp-application.herokuapp.com/">View Project</LinkButton>
+      <LinkButton href="https://qapp-application.herokuapp.com/">View Project</LinkButton>
     </section>
     <BackToTop />
   </section>

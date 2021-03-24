@@ -2,7 +2,7 @@
   <section>
     <NavBreadcrumb :trail="['Home', 'Resume']" />
     <h1>Resume</h1>
-    <LinkButton link="/Joshua_Richards_Resume.pdf">View PDF</LinkButton>
+    <LinkButton :href="sourcePDF" download>Download PDF</LinkButton>
     <section class="body-section">
       <h2>Summary</h2>
       <p>Software Engineer with development experience ranging from web APIs to embedded systems, driven to work 
@@ -90,6 +90,7 @@
 import NavBreadcrumb from "@/components/NavBreadcrumb";
 import BackToTop from "@/components/BackToTop";
 import LinkButton from "@/components/LinkButton";
+import sourcePDF from "@/assets/Joshua_Richards_Resume.pdf";
 
 export default {
   name: "Resume",
@@ -97,6 +98,11 @@ export default {
     NavBreadcrumb,
     BackToTop,
     LinkButton
+  },
+  data() {
+    return {
+      sourcePDF: sourcePDF
+    }
   }
 };
 </script>

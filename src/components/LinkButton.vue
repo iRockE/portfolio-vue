@@ -1,13 +1,12 @@
 <template>
-  <a target="_blank" :href="link">
+  <a target="_blank">
     <slot></slot>
   </a>
 </template>
 
 <script>
 export default {
-  name: "LinkButton",
-  props: ["link"]
+  name: "LinkButton"
 };
 </script>
 
