@@ -2,7 +2,7 @@
   <section>
     <NavBreadcrumb :trail="['Home', 'Resume']" />
     <h1>Resume</h1>
-    <LinkButton :href="sourcePDF" download>Download PDF</LinkButton>
+    <LinkButton :href="sourcePDF" download="Joshua_Richards_Resume.pdf">Download PDF</LinkButton>
     <section class="body-section">
       <h2>Summary</h2>
       <p>Software Engineer with development experience ranging from web APIs to embedded systems, driven to work 
