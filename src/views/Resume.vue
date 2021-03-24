@@ -2,7 +2,7 @@
   <section>
     <NavBreadcrumb :trail="['Home', 'Resume']" />
     <h1>Resume</h1>
-    <a target="_blank" href="@/assets/Joshua_Richards_Resume.pdf">View PDF</a>
+    <LinkButton link="/Joshua_Richards_Resume.pdf">View PDF</LinkButton>
     <section class="body-section">
       <h2>Summary</h2>
       <p>Software Engineer with development experience ranging from web APIs to embedded systems, driven to work 
@@ -89,12 +89,14 @@
 <script>
 import NavBreadcrumb from "@/components/NavBreadcrumb";
 import BackToTop from "@/components/BackToTop";
+import LinkButton from "@/components/LinkButton";
 
 export default {
   name: "Resume",
   components: {
     NavBreadcrumb,
-    BackToTop
+    BackToTop,
+    LinkButton
   }
 };
 </script>

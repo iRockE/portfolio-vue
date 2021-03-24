@@ -48,7 +48,7 @@ html {
         }
       }
       .body-section {
-        margin: 0 0 4rem;
+        margin: 0 0 4.6rem;
         h2 {
           font-size: 4rem;
           font-weight: 100;
