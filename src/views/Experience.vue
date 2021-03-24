@@ -1,8 +1,8 @@
 <template>
   <section>
     <NavBreadcrumb :trail="['Home', 'Experience']" />
-    <h1 id="experienceHeader">Experience</h1>
-    <section class="experienceSection">
+    <h1>Experience</h1>
+    <section class="body-section">
       <h2>UTC Fire & Security Americas Corp</h2>
       <h4>Pittsford, NY</h4>
       <h3>Software Engineer</h3>
@@ -14,7 +14,7 @@
       <h3>Software Engineering Co-op</h3>
       <h5>Aug 27, 2018 – Dec 14, 2018</h5>
     </section>
-    <section class="experienceSection">
+    <section class="body-section">
       <h2>Gerber Technology</h2>
       <h4>Tolland, CT</h4>
       <h3>Software Engineering Intern</h3>
@@ -32,7 +32,7 @@
         engineer, and software engineer (myself). The interface was created in Windows Presentation Foundation 
         (with languages including C#, XAML, and SQL) as an addition to the system's existing interface.</p>
     </section>
-    <section class="experienceSection">
+    <section class="body-section">
       <h2>EagleDream Technologies</h2>
       <h4>Rochester, NY</h4>
       <h3>Web Developer Co-op</h3>

@@ -40,11 +40,40 @@ html {
 
       h1 {
         text-align: center;
-        margin: 1rem 0 5rem;
+        margin: 1rem 0 4rem;
         font-weight: 100;
-        font-size: 4.6rem;
+        font-size: 5rem;
         @include sm {
           font-size: 6rem;
+        }
+      }
+      .body-section {
+        margin: 0 0 4rem;
+        h2 {
+          font-size: 4rem;
+          font-weight: 100;
+          margin: 0 0 .2rem 0;
+        }
+        h4 {
+          font-size: 1.6rem;
+          font-weight: 400;
+          margin: 0 0 1.4rem 0;
+          font-style: italic;
+          color: $font-grey-light;
+        }
+        h3 {
+          font-size: 2.4rem;
+          font-weight: 400;
+          margin: 0 0 .4rem 0;
+        }
+        h5 {
+          font-size: 1.6rem;
+          font-weight: 400;
+          margin: 0 0 .4rem 0;
+        }
+        p {
+          font-size: 1.2rem;
+          margin: 0 0 1.4rem 0;
         }
       }
     }
