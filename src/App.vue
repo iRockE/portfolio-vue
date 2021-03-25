@@ -5,15 +5,18 @@
         <component :is="Component" />
       </transition>
     </router-view>
+    <AppFooter />
 </template>
 
 <script>
 import NavBar from "@/components/NavBar";
+import AppFooter from "@/components/AppFooter";
 
 export default {
   name: "App",
   components: {
-    NavBar
+    NavBar,
+    AppFooter
   }
 };
 </script>
