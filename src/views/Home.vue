@@ -11,23 +11,23 @@
         I have a passion for learning new technologies to implement projects both effectively and efficiently.
       </p>
     </section>
-    <section id="indexNav">
+    <section class="indexNav">
       <div class="iconContainer">
-        <router-link class="waves-effect waves-light btn" to="/experience">
+        <router-link to="/experience">
           <h5>Experience</h5>
-          <i class="large material-icons">work</i>
+          <i class="material-icons">work</i>
         </router-link>
       </div>
       <div class="iconContainer">
-        <router-link class="waves-effect waves-light btn" to="/projects">
+        <router-link to="/projects">
           <h5>Projects</h5>
-          <i class="large material-icons">laptop</i>
+          <i class="material-icons">laptop</i>
         </router-link>
       </div>
       <div class="iconContainer">
-        <router-link class="waves-effect waves-light btn" to="/resume">
+        <router-link to="/resume">
           <h5>Resume</h5>
-          <i class="large material-icons">assignment</i>
+          <i class="material-icons">assignment</i>
         </router-link>
       </div>
     </section>
@@ -102,6 +102,64 @@ export default {
       padding: 40px 20px;
       @include sm {
         font-size: 1.5rem;
+      }
+    }
+  }
+  .indexNav {
+    padding: 80px 0;
+    text-align: center;
+    .iconContainer {
+      padding: 20px 30px;
+      @include md {
+        display: inline-block;
+      }
+      @include xl {
+        padding: 20px 50px;
+      }
+      a {
+        border: none;
+        border-radius: 2px;
+        padding: 0 16px;
+        text-transform: uppercase;
+        outline: 0;
+        text-align: center;
+        letter-spacing: .5px;
+        text-decoration: none;
+        color: #fff;
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        overflow: hidden;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        vertical-align: middle;
+        z-index: 1;
+        width: 180px;
+        height: auto;
+        -webkit-transition: 0.4s ease;
+        transition: 0.4s ease;
+        background-color: $button-color;
+        box-sizing: border-box;
+        box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+        &:hover {
+          background-color: $button-hover-color;
+          box-shadow: 0 3px 3px 0 rgb(0 0 0 / 14%), 0 1px 7px 0 rgb(0 0 0 / 12%), 0 3px 1px -1px rgb(0 0 0 / 20%);
+          @include md {
+            -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+          }
+        }
+        h5 {
+          font-size: 1.64rem;
+          font-weight: 400;
+          line-height: 110%;
+          margin: 1rem 0 .4rem 0;
+        }
+        i {
+          font-size: 6rem;
+          line-height: 1;
+          margin-bottom: .5rem;
+        }
       }
     }
   }
