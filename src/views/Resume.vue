@@ -2,7 +2,7 @@
   <section>
     <NavBreadcrumb :trail="['Home', 'Resume']" />
     <h1>Resume</h1>
-    <LinkButton :href="sourcePDF" download="Joshua_Richards_Resume.pdf" class="pdf-button">Download PDF</LinkButton>
+    <LinkButton :href="sourcePDF" class="pdf-button">View PDF</LinkButton>
     <section class="body-section">
       <h2>Summary</h2>
       <p>Software Engineer with development experience ranging from web APIs to embedded systems, driven to work 
@@ -114,7 +114,7 @@ h1 {
 .pdf-button {
   display: block;
   margin: 0 auto 2rem;
-  width: 120px;
+  width: 80px;
 }
 .resumeExperience {
   margin-bottom: 2rem;
