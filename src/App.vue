@@ -20,6 +20,7 @@ export default {
 
 <style lang="scss">
 html {
+  line-height: 1.5;
   color: rgba(0,0,0,0.87);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   font-weight: normal;
@@ -52,7 +53,7 @@ html {
         h2 {
           font-size: 4rem;
           font-weight: 100;
-          margin: 0 0 .2rem 0;
+          margin: 0 0 .4rem 0;
         }
         h4 {
           font-size: 1.6rem;

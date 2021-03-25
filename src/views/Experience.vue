@@ -3,7 +3,7 @@
     <NavBreadcrumb :trail="['Home', 'Experience']" />
     <h1>Experience</h1>
     <section class="body-section">
-      <h2>UTC Fire & Security Americas Corp</h2>
+      <h2>Carrier Global Corporation</h2>
       <h4>Pittsford, NY</h4>
       <h3>Software Engineer</h3>
       <h5>Dec 15, 2018 – Present</h5>

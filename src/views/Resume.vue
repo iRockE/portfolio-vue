@@ -2,7 +2,7 @@
   <section>
     <NavBreadcrumb :trail="['Home', 'Resume']" />
     <h1>Resume</h1>
-    <LinkButton :href="sourcePDF" download="Joshua_Richards_Resume.pdf">Download PDF</LinkButton>
+    <LinkButton :href="sourcePDF" download="Joshua_Richards_Resume.pdf" class="pdf-button">Download PDF</LinkButton>
     <section class="body-section">
       <h2>Summary</h2>
       <p>Software Engineer with development experience ranging from web APIs to embedded systems, driven to work 
@@ -106,3 +106,35 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+h1 {
+  margin-bottom: 1.6rem !important;
+}
+.pdf-button {
+  display: block;
+  margin: 0 auto 2rem;
+  width: 120px;
+}
+.resumeExperience {
+  margin-bottom: 2rem;
+  h4 {
+    font-size: 1.4rem !important;
+    margin-bottom: .94rem !important;
+  }
+  .right {
+    float: right;
+  }
+}
+ul {
+  font-size: 1.2rem;
+  margin-top: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+  }
+}
+.projectList li {
+  margin-bottom: .8rem;
+}
+</style>
