@@ -1,7 +1,7 @@
 <template>
   <footer class="page-footer">
     <div class="container">
-      <div class="right-col">
+      <div class="left-col">
         <h5>Contact</h5>
         <ul>
           <li>
@@ -12,7 +12,7 @@
           </li>
         </ul>
       </div>
-      <div class="left-col">
+      <div class="right-col">
         <h5>Social</h5>
         <ul>
           <li><a class="social-link" target="_blank" href="https://www.linkedin.com/in/j-richards/">
@@ -25,7 +25,7 @@
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">© 2018 Joshua Richards - All Rights Reserved</div>
+      <div class="container">© 2021 Joshua Richards - All Rights Reserved</div>
     </div>
   </footer>
 </template>
@@ -43,13 +43,12 @@ export default {
     background-color: #546e7a;
     & > .container {
       margin-bottom: 20px;
-      max-width: 992px;
       &:after {
         content: "";
         display: table;
         clear: both;
       }
-      .right-col {
+      .left-col {
         float: left;
         box-sizing: border-box;
         padding: 0 .75rem;
@@ -62,7 +61,7 @@ export default {
           width: 50%;
         }
       }
-      .left-col {
+      .right-col {
         float: left;
         box-sizing: border-box;
         padding: 0 .75rem;
@@ -100,6 +99,10 @@ export default {
       color: rgba(255,255,255,0.8);
       background-color: rgba(51,51,51,0.08);
       box-sizing: border-box;
+      .container {
+        padding: 0 .75rem;
+        box-sizing: border-box;
+      }
     }
     .social-link {
       display: block;
@@ -114,7 +117,7 @@ export default {
 }
 .container {
   margin: 0 auto;
-  max-width: 1020px;
+  max-width: 1040px;
   width: 90%;
 }
 </style>
