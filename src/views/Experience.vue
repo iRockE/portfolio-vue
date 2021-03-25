@@ -13,6 +13,7 @@
         The interface is created with Node.js, utilizing technologies including ES6, TypeScript, and RxJS.</p>
       <h3>Software Engineering Co-op</h3>
       <h5>Aug 27, 2018 – Dec 14, 2018</h5>
+      <p><i>Same as above</i></p>
     </section>
     <section class="body-section">
       <h2>Gerber Technology</h2>
