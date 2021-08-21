@@ -7,8 +7,7 @@
     </div>
     <section class="intro">
       <p>
-        I am a full stack developer with experience ranging from web APIs to embedded systems.
-        I have a passion for learning new technologies to implement projects both effectively and efficiently.
+        I am a full stack (primarily front-end) developer with experience ranging from web APIs to embedded systems. I have a passion for learning new technologies to implement projects both effectively and efficiently.
       </p>
     </section>
     <section class="indexNav">

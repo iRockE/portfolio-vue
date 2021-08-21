@@ -11,6 +11,9 @@
         video streaming interface. This requires support for multiple video codecs (H.264, MJPEG, etc.) and 
         connection protocols (WebSockets, WebRTC) in a number of browsers / operating systems.
         The interface is created with Node.js, utilizing technologies including ES6, TypeScript, and RxJS.</p>
+      <p>Recently responsible for development work on one of the applications that uses the streaming
+        interface mentioned above, which is composed of a number of microservices deployed through Azure. The front-end
+        portion is built with technologies including Node.js, React, and Redux.</p>
       <h3>Software Engineering Co-op</h3>
       <h5>Aug 27, 2018 – Dec 14, 2018</h5>
       <p><i>Same as above</i></p>
