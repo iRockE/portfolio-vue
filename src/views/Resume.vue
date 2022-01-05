@@ -27,11 +27,11 @@
         <h5>Software Engineer</h5>
         <p>Responsible for the development of a web-based video streaming interface for security
           applications (with technologies including ES6, TypeScript, Node.js, RxJS, WebSockets).</p>
-        <p>- Technical lead of the project from January, 2020 to August, 2020. </p>
-        <p>Recently responsible for development work on one of the applications that uses the streaming
-          interface mentioned above (with technologies including Node.js, React, Redux).</p>
-        <p>- Team lead from May, 2021 to Present. </p>
+        <p>Responsible for development work on a SaaS security application that uses the streaming 
+        interface mentioned above (with technologies including Node.js, React, Redux).</p>
         <p>Utilizing services such as Rally, GitHub, Jenkins (CI/CD), and Azure.</p>
+        <p>Technical lead from January, 2020 to August, 2020.</p>
+        <p>Team lead from May, 2021 to Present.</p>
       </div>
       <div class="resumeExperience">
         <h3>UTC Fire & Security Americas Corp</h3>

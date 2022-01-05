@@ -9,14 +9,27 @@
       <h5>Dec 15, 2018 – Present</h5>
       <p>As part of an international team, I am responsible for the development of a web-based security-driven
         video streaming interface. This requires support for multiple video codecs (H.264, MJPEG, etc.) and 
-        connection protocols (WebSockets, WebRTC) in a number of browsers / operating systems.
-        The interface is created with Node.js, utilizing technologies including ES6, TypeScript, and RxJS.</p>
-      <p>Recently responsible for development work on one of the applications that uses the streaming
-        interface mentioned above, which is composed of a number of microservices deployed through Azure. The front-end
-        portion is built with technologies including Node.js, React, and Redux.</p>
+        connection protocols (WebSockets, WebRTC) in a number of browsers / operating systems. The interface supports 
+        viewing live/recorded video, frame advancement, fast-forward/reverse, digital zoom, jumping to specific times, etc.
+        The interface is created with Node.js, utilizing technologies including TypeScript/JavaScript, ES6, and RxJS.</p>
+      <p>I also aid in the development of a SaaS security application that uses the streaming 
+        interface mentioned above. The application is composed of a number of microservices deployed through Azure, and is focused
+        on access control and video. The front-end services are built with technologies including JavaScript, Node.js, 
+        React, Redux, Sass, i18next, and Ramda.</p>
+      <p>I use services such as Rally (issue tracking), GitHub (version control), Jenkins (CI/CD), 
+        Confluence (documentation), and Azure (cloud deployment/management).</p>
+      <p>While continuing to act as an individual contributor on the above projects, I have served as a team lead 
+        since May, 2021. Responsibilities include:</p>
+      <ul>
+        <li>Work with product management to plan features and define acceptance criteria</li>
+        <li>Define all stories/tasks for a feature</li>
+        <li>Run daily stand up and retrospective meetings</li>
+        <li>Help team members resolve issues as they arise</li>
+        <li>Give feature demos to product management and broader audiences</li>
+      </ul>
       <h3>Software Engineering Co-op</h3>
       <h5>Aug 27, 2018 – Dec 14, 2018</h5>
-      <p><i>Same as above</i></p>
+      <p><i>See above</i></p>
     </section>
     <section class="body-section">
       <h2>Gerber Technology</h2>
@@ -62,3 +75,11 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+ul {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-right: 20px;
+}
+</style>
